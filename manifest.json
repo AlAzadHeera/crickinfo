@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name" : "CricInfo",
+    "version": "1.0",
+    "description": "Modifies the CricInfo live score page",
+    "icons":{
+        "128": "128.png",
+        "48": "48.png",
+        "32": "32.png",
+        "16": "16.png"
+    },
+    "page_action":{
+        "default_icon": "16.png",
+        "default_popup": "popup.html",
+        "default_title": "Modify CricInfo"
+    },
+    "background": {
+        "scripts":["eventPage.js"],
+        "persistant": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.espncricinfo.com/series/*/live-cricket-score"],
+            "js": ["content.js","jquery.js","slide.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "permissions":[
+        "tabs",
+        "https://www.espncricinfo.com/series/*/live-cricket-score",
+        "management"
+    ],
+    "web_accessible_resources": [
+        "stadium.jpg",
+		"music.mp3"
+    ]
+}

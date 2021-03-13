@@ -1,0 +1,16 @@
+body{
+    width: 350px;
+    min-height: 150px;
+    box-sizing: border-box;
+	background-image: linear-gradient(to bottom right, #9bf6ff , #fdffb6);
+}
+
+.title-box{
+    width: 100%;
+    text-align: center;
+}
+
+.music-switch{
+    width: 100%;
+    text-align: center;
+}

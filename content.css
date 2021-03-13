@@ -1,0 +1,201 @@
+body{
+	color: #000000 !important;
+}
+
+*{
+  color: #000 !important;
+}
+
+.main-rhs{
+  display: none !important;
+}
+
+.main-content-x {
+  width: calc(100% - 320px);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(100% - 0px) !important;
+}
+
+@media (min-width: 1024px){
+  .col-lg-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/*------------------------- Pulse Effect --------------------------*/
+.circle {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  margin:0 10px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+.green{
+    background: green;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.main-content-x{
+    margin-top: -15%;
+}
+
+.match-header, .live-scorecard{
+    visibility: visible !important;
+}
+
+.match-header{
+    border: .5px solid #ccc;
+    border-radius: 0px !important;
+    border: none !important;
+    
+}
+
+.match-home-tabs{
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#title-box{
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    visibility: visible !important;
+}
+
+#clock-box{
+  visibility: visible !important;
+  position: fixed;
+  top: 10%;
+  left: 36%;
+  font-size: 30px;
+  justify-content: center;
+}
+
+
+
+/*----------------------- Font Size ------------------------*/
+.status-text{
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+
+
+.last-wicket{
+  font-size: 16px !important;
+}
+
+.current-partnerships{
+  font-size: 16px !important;
+  padding: 0 !important;
+}
+
+.player-name{
+  font-size: 14px i !important;
+}
+
+.player-style{
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.fow span{
+  font-size: 15px !important;
+}
+
+.fow .data-title{
+  font-size: 16px !important;
+}
+
+.extra-small span{
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.career-data{
+  font-size: 16px !important;
+}
+
+.description{
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.stats-secondary{
+  font-weight: bold !important;
+  color: #48cae4 !important;
+}
+
+.score-info{
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.score{
+  font-size: 30px !important;
+  color: darkorange !important;
+}
+
+th{
+  font-size: 16px !important;
+  color: #48cae4 !important;
+}
+
+td{
+  font-size: 16px !important;
+}
+
+.status span{
+  font-size: 28px;
+  color: green !important;
+}
+
+.current-partnerships span{
+  color: darkorange !important;
+}
+
+.name{
+  color: #48cae4 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
